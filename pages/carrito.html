@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito - Juanchito's</title>
+    <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="/index.html" class="logo">JUANCHITO'S</a>
+    </nav>
+
+    <!-- Contenido -->
+    <main class="container">
+        <h2>Carrito de Compras</h2>
+        <p id="fecha-hora"></p>
+        <table class="tabla-carrito">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Total</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="lista-carrito"></tbody>
+        </table>
+
+        <div class="total-container">
+            <h4>Total: $<span id="total-carrito">0</span></h4>
+            <button class="btn-vaciar" id="vaciar-carrito">Vaciar Carrito</button>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            
+            <!-- Información -->
+            <div class="footer-section">
+                <h3>Información</h3>
+                <ul>
+                    <li><a href="#">Sobre nosotros</a></li>
+                    <li><a href="#">Menú</a></li>
+                    <li><a href="#">Promociones</a></li>
+                    <li><a href="#">Novedades</a></li>
+                </ul>
+            </div>
+    
+            <!-- Soporte -->
+            <div class="footer-section">
+                <h3>Soporte</h3>
+                <ul>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                </ul>
+            </div>
+    
+            <!-- Redes Sociales -->
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="/tienda/img/instagram.svg" alt="Instagram"></a>
+                    <a href="#"><img src="/tienda/img/facebook.svg" alt="Facebook"></a>
+                    <a href="#"><img src="/tienda/img/twitter.svg" alt="Twitter"></a>
+                    <a href="#"><img src="/tienda/img/web.svg" alt="Web"></a>
+                </div>
+            </div>
+    
+            <!-- Ubicación -->
+            <div class="footer-section">
+                <h3>Ubicación</h3>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7958.63068006107!2d-73.64345034476595!3d4.158269791669686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3e2dec5048ce1b%3A0xaf9de151b2545f52!2sJuanchito&#39;s!5e0!3m2!1ses-419!2sco!4v1742597979185!5m2!1ses-419!2sco" 
+                    width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+    
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2025 JUANCHITO'S - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+
+    <script src="/js/carrito.js"></script>
+    <script src="/js/fechahora.js"></script>
+</body>
+</html>

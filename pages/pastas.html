@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastas - Juanchito's</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="/index.html" class="logo">JUANCHITO'S</a>
+        <ul class="nav-links">
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="categorias.html">Categorías</a></li>
+            <li><a href="carrito.html">Carrito</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido -->
+    <main class="container">
+        <h1>Pastas</h1>
+        <p>Pastas con recetas tradicionales y el mejor sabor.</p>
+        <p id="fecha-hora"></p>
+
+        <div class="productos">
+            <div class="producto">
+                <img src="/img/pastacarbonara.jpg" alt="Pasta Carbonara">
+                <h3>Pasta Carbonara</h3>
+                <p>$7.49</p>
+                <button onclick="agregarAlCarrito('Pasta Carbonara', 7.49)">Añadir al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="/img/pastabolognesa.jpg" alt="Pasta Boloñesa">
+                <h3>Pasta Boloñesa</h3>
+                <p>$7.99</p>
+                <button onclick="agregarAlCarrito('Pasta Boloñesa', 7.99)">Añadir al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="/img/lasagna.jpg" alt="Lasagna">
+                <h3>Lasagna</h3>
+                <p>$8.99</p>
+                <button onclick="agregarAlCarrito('Lasagna', 8.99)">Añadir al carrito</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Icono flotante del carrito -->
+    <div class="icono-carrito" onclick="toggleCarrito()">🛒</div>
+
+    <!-- Panel lateral del carrito -->
+    <div id="panel-carrito" class="panel-carrito">
+        <h4>Carrito de Compras</h4>
+        <ul id="lista-carrito-panel"></ul>
+        <div class="panel-buttons">
+            <button id="vaciar-carrito-panel">Vaciar</button>
+            <a href="carrito.html" class="btn">Ir al carrito</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            
+            <!-- Información -->
+            <div class="footer-section">
+                <h3>Información</h3>
+                <ul>
+                    <li><a href="#">Sobre nosotros</a></li>
+                    <li><a href="#">Menú</a></li>
+                    <li><a href="#">Promociones</a></li>
+                    <li><a href="#">Novedades</a></li>
+                </ul>
+            </div>
+    
+            <!-- Soporte -->
+            <div class="footer-section">
+                <h3>Soporte</h3>
+                <ul>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                </ul>
+            </div>
+    
+            <!-- Redes Sociales -->
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="/img/instagram.svg" alt="Instagram"></a>
+                    <a href="#"><img src="/img/facebook.svg" alt="Facebook"></a>
+                    <a href="#"><img src="/img/twitter.svg" alt="Twitter"></a>
+                    <a href="#"><img src="/img/web.svg" alt="Web"></a>
+                </div>
+            </div>
+    
+            <!-- Ubicación -->
+            <div class="footer-section">
+                <h3>Ubicación</h3>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7958.63068006107!2d-73.64345034476595!3d4.158269791669686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3e2dec5048ce1b%3A0xaf9de151b2545f52!2sJuanchito&#39;s!5e0!3m2!1ses-419!2sco!4v1742597979185!5m2!1ses-419!2sco" 
+                    width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+    
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2025 JUANCHITO'S - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+
+    <script src="../js/carrito.js"></script>
+    <script src="/js/fechahora.js"></script>
+</body>
+</html>
